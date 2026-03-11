@@ -15,26 +15,36 @@ This project is organized into multiple Use Cases (UC), demonstrating progressiv
     *   If no argument is provided, the application gracefully defaults to "Hello World".
     *   *Goal:* Introduce parsing of simple command-line arguments in Java.
 
-## How to Run
+## How to Run (Using IntelliJ IDEA)
 
-Ensure you have the Java Development Kit (JDK) installed on your system.
+This project has been structured for IntelliJ IDEA (using a `src` directory with packages). 
 
-1.  **Navigate to the project directory:**
-    ```bash
-    cd c:\Users\Owner\Documents\AntiGravity\Hello_App
-    ```
+1. **Open the Project:**
+   Open IntelliJ IDEA, select **Open**, and choose the `Hello_App` folder.
+2. **Explore the Code:**
+   Navigate to the `src` folder in your "Project" view (Alt+1 / Cmd+1).
+   - Use Case 1 is located at `src/uc1/HelloApp.java`
+   - Use Case 2 is located at `src/uc2/HelloApp.java`
+3. **Run Use Case 1 (Simple Display):**
+   - Open `src/uc1/HelloApp.java`.
+   - Click the green "Play" button next to the `public static void main` method.
+   - It will print "Hello World".
+4. **Run Use Case 2 (Personalized Greeting):**
+   - Open `src/uc2/HelloApp.java`.
+   - Click the green "Play" button next to the `main` method.
+   - **To pass a name (Command-Line argument):** 
+     - Go to the Run menu -> **Edit Configurations...**
+     - In the **Program arguments** box under the `HelloApp` configuration, type a name (e.g., `"John Doe"`).
+     - Click **Apply** and **Run**.
 
-2.  **Compile and Run:**
+## How to Run (Command Line)
+If you still prefer the command line:
 
-    *   **Compile:**
-        ```bash
-        javac HelloApp.java
-        ```
-    *   **Run (Default):**
-        ```bash
-        java HelloApp
-        ```
-    *   **Run (With Name):**
-        ```bash
-        java HelloApp "John Doe"
-        ```
+```bash
+cd c:\Users\Owner\Documents\AntiGravity\Hello_App\src
+javac uc1/HelloApp.java
+java uc1.HelloApp
+
+javac uc2/HelloApp.java
+java uc2.HelloApp "John Doe"
+```
